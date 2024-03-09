@@ -14,7 +14,9 @@ void printer(){
   }
   catch (e){
     print('Something went wrong: ${e.toString()}');
-  }
+  }finally{
+    print('rest of code will execute');
+  };
   printingnews();
 }
 
@@ -38,7 +40,6 @@ class myCustomException implements Exception{
     return 'This is my custom exception';
   }
 }
-
 class machineException implements Exception{
 
   @override
