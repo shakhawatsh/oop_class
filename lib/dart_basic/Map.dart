@@ -21,4 +21,15 @@ void main(){
   MyMaps[4]='Jessi';
 
   print(MyMaps);
+
+  print(MyMaps.containsKey(8));
+  print(MyMaps.containsValue('Atthu'));
+
+  Map<String, Map<String, int>> dummy = {
+    'name' : {
+      'anotherName' : 1234
+    },
+  };
+  print(dummy);
+
 }
